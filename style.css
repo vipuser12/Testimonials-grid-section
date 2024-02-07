@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    --border-radius: 10px;
+}
+
+* {
+    font-family: "Barlow Semi Condensed";
+}
+
+html {
+    width: 1440px;
+    height: 900px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--Light-gray);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 1320px;
+    height: 900px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "daniel left-center jonathan . kira" "jeanette left-center patrick . kira";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.daniel {
+    grid-area: daniel;
+}
+
+.jonathan {
+    grid-area: jonathan;
+}
+
+.jeanette {
+    grid-area: jeanette;
+}
+
+.patrick {
+    grid-area: patrick;
+}
+
+.left-center {
+    grid-area: left-center;
+}
+
+.kira {
+    grid-area: kira;
+}
+
+.profile-img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.border {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.description {
+    align-items: center;
+    display: flex;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    align-items: center;
+    bottom: -10px;
+}
+
+.block p {
+    position: relative;
+    bottom: 25px;
+    text-align: left;
+}
+
+.border {
+    border-radius: 80px;
+    width: 50px;
+    border: 2px solid var(--Moderate-violet);
+}
+
+.left-center {
+    display: grid;
+    gap: 30px;
+}
+
+.top {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom {
+    display: flex;
+    gap: 30px;
+}
+
+.daniel {
+    background-color: var(--Moderate-violet);
+    width: 580px;
+    border-radius: var(--border-radius);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-x: 450px;
+}
+
+.daniel img {
+    border-radius: 80px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--Moderate-violet);
+}
+
+.daniel h3 {
+    color: var(--Light-grayish-blue);
+}
+
+.daniel h2 {
+    color: var(--Light-grayish-blue);
+    font-size: 1.5rem;
+}
+
+.daniel p {
+    color: hsl(210, 46%, 95%, 70%);
+    font-size: 1rem;
+}
+
+.daniel .verified {
+    color: hsl(210, 46%, 95%, 50%);
+    font-size: small;
+}
+
+.jonathan {
+    width: 230px;
+    background-color: var(--Very-dark-grayish-blue);
+    border-radius: var(--border-radius);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+.jonathan h3 {
+    color: var(--Light-grayish-blue);
+    display: flex;
+}
+
+.jonathan .verified {
+    color: hsl(210, 46%, 95%, 50%);
+    font-size: small;
+}
+
+.jonathan h3 {
+    color: var(--Light-grayish-blue);
+}
+
+.jonathan h2 {
+    color: var(--Light-grayish-blue);
+    font-size: 1.5rem;
+}
+
+.jonathan p {
+    color: hsl(210, 46%, 95%, 70%);
+    font-size: 1rem;
+}
+
+.jeanette {
+    width: 230px;
+    background-color: var(--White);
+    border-radius: var(--border-radius);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+.jeanette h3 {
+    color: hsl(219, 29%, 14%, 70%);
+}
+
+.jeanette h2 {
+    color: hsl(219, 29%, 14%, 80%);
+    font-size: 1.5rem;
+}
+
+.jeanette p {
+    color: hsl(219, 29%, 14%, 70%);
+    font-size: 1rem;
+}
+
+.patrick {
+    width: 580px;
+    background-color: var(--Very-dark-blackish-blue);
+    border-radius: var(--border-radius);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+.patrick img {
+    border-radius: 80px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--Moderate-violet);
+}
+
+.patrick h3 {
+    color: var(--Light-grayish-blue);
+}
+
+.patrick h2 {
+    color: var(--Light-grayish-blue);
+    font-size: 1.5rem;
+}
+
+.patrick p {
+    color: hsl(210, 46%, 95%, 70%);
+    font-size: 1rem;
+}
+
+.patrick .verified {
+    font-size: small;
+}
+
+.kira {
+    grid-area: kira;
+    width: 200px;
+    background-color: var(--White);
+    border-radius: var(--border-radius);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+.kira p {
+    color: var(--Very-dark-grayish-blue, 0.7);
+    font-size: 1rem;
+}
+
+.kira h3 {
+    color: hsl(219, 29%, 14%, 70%);
+}
+
+.kira h2 {
+    color: hsl(219, 29%, 14%, 80%);
+    font-size: 1.5rem;
+}
+
+.kira p {
+    color: hsl(219, 29%, 14%, 70%);
+    font-size: 1rem;
+}
+
+.attribution {
+    color: rgb(0, 183, 255);
+    font-size: xx-large;
+}
