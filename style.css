@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background-color: var(--Light-gray);
+    background-color: var(--Light-grayish-blue));
     font-size: 13px;
     display: flex;
     justify-content: center;
